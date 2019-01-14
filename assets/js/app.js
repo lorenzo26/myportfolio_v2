@@ -12,6 +12,11 @@ $(document).on("click",".nav_bar .drop > a", function(e){
 	$(document).find(".current").removeClass("current")
 	$(document).find("#"+page).addClass("current")
 	$(document).find(".current").attr("class","fade-page current")
+	if (page == "about") {
+		setTimeout(function(){
+			$(document).find("#about").scrollTop(0);
+		}, 2);
+	}
 })
 
 $(document).on("click",".page-scroll", function(e){
