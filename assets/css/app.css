@@ -55,7 +55,7 @@ aside{
 }
 #about{  
     overflow: auto;
-    transition: all 0.4s ease-in-out 0s;   
+    transition: all 0.8s ease-in-out 0s;   
     padding: 20px 0; 
 }
 .profile-img{
@@ -331,7 +331,7 @@ section{
     transition: all 0.4s ease-in-out 0s;
     background: #ebebeb;
     border-top-right-radius: 5px;
-    min-height: 50px;
+    min-height: 35px;
     padding: 10px;
     margin-bottom: 10px;
     position: absolute;
