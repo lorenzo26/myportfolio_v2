@@ -57,6 +57,7 @@ aside{
     overflow: auto;
     transition: all 0.8s ease-in-out 0s;   
     padding: 20px 0; 
+    background: #f5f5f5;
 }
 .profile-img{
 	margin: auto;
@@ -79,8 +80,11 @@ aside{
     text-align: center;
 }
 .about-container{
-    /* width: 90%; */
+    width: 95%; 
     margin: 0 auto;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    background: #fff;
+    padding-top: 10px;
 }
 .border-frame{
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -422,7 +426,6 @@ section{
     color: #fff;
     text-align: center;
     font-size: 25px;
-    top:0;
 }
 
 #contact > div{
@@ -438,6 +441,7 @@ section{
 }
 #portfolio{
     background: #f5f5f5;
+    overflow: auto;
 }
 .section-title{
     display: inline-block;
@@ -461,11 +465,11 @@ section{
     border-right: 10px solid #0099ff;
 }
 #portfolio  .portfolio-container{
-    width: 95%;
-    margin: 30px auto 0 auto;
+    width: 93%;
+    margin: 30px auto 30px auto;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     padding: 15px;
-    height: 90vh;
+    min-height: 90vh;
     background: #fff;
 }
 .portfolio-container .info-box{
@@ -484,15 +488,43 @@ section{
     transition: all .5s ease 0s;
     color: #fff;
 }
+.title-port .icon li a:hover {
+    /*transform: rotate(360deg);*/
+     transition: all .5s ease 0s;
+}
+.title-port .icon li a:hover  span{
+    width: 100%;
+    display: block;
+    transition: all .5s ease 0s;
+}
 .portfolio-container .title-port ul{
      list-style: none;
-     padding: 0
+     padding: 0;
+     position: relative;
 }
 .portfolio-container .title-port ul li{
      display: inline-block;
 }
 .portfolio-container .title-port ul li a{
-     color: #000;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #0dab76;
+    color: #fff;
+    margin-right: 10px;
+    transition: all .5s ease 0s;
+}
+.portfolio-container .title-port ul li a span{
+    position: absolute;
+    top: 52px;
+    width: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    transition: all .5s ease 0s;
+    background: rgba(0,0,0,.5);
 }
 .portfolio-container .info-box:after, .portfolio-container .info-box:before {
     width: 100%;
@@ -525,4 +557,8 @@ section{
     bottom: 30%;
     /*left: 0;*/
     transition: all .5s ease 0s;
+}
+.portfolio-description{
+    padding: 5px;
+    text-align: center;
 }
