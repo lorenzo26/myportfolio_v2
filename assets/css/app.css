@@ -562,3 +562,34 @@ section{
     padding: 5px;
     text-align: center;
 }
+#footer{
+    background: #f9fafc;
+    position: fixed;
+    bottom: 0;width: 100%
+    ;height: 35px;
+    z-index: 1000;
+    display: flex;
+}
+#footer div:first-child{
+    width: 80%;
+    display: inline-block;
+}
+#footer div:first-child div{
+    padding: 5px;
+    width: 100%;
+}
+#footer div:last-child{
+    width: 20%;
+    display: inline-block;
+}
+#footer div:last-child div{
+    font-size: 26px;
+    color: #000;
+    width: 100%;
+    padding-right: 5px;
+}
+#footer div:last-child div a{
+    color: #000;
+    float: right;
+    margin: 0 2px;
+}
