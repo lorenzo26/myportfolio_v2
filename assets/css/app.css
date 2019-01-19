@@ -398,6 +398,10 @@ section{
     .nav_bar li:hover{
         background: #f9fafc;
     }
+    .portfolio-container > div > div{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 .fade-page {
     width: 100%;
